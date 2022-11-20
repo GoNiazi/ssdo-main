@@ -2964,7 +2964,7 @@ export default function Home() {
                 <Slider />
               </div>
               {/* reports*/}
-              <div class="col-12 mb-4 ">
+              <div class="col-12 mb-4  ">
                 <div class="block-area p-4 border bg-light-black">
                   <div class="block-title-13">
                     <h4 class="h5 title-box-dot">

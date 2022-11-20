@@ -19232,13 +19232,13 @@ h1 > a:hover, h2 > a:hover, h3 > a:hover, h4 > a:hover, h5 > a:hover, h6 > a:hov
     padding: 0.125rem !important;
   }
   .px-md-05, .ps-md-05 {
-    padding-left: 0.125rem !important;
+    /* padding-left: 0.125rem !important; */
   }
   .px-md-05, .pe-md-05 {
     padding-right: 0.125rem !important;
   }
   .py-md-05, .pt-md-05 {
-    padding-top: 0.125rem !important;
+    /* padding-top: 0.125rem !important; */
   }
   .py-md-05, .pb-md-05 {
     padding-bottom: 0.125rem !important;
