@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-
+import Link from "next/link";
 import Layout from "./../components/Layout";
 import Slider from "./../components/Slider";
 export default function Home() {
@@ -483,10 +483,11 @@ export default function Home() {
                           aria-labelledby="hom1"
                         >
                           <li>
-                            <a class="dropdown-item" href="business.html">
-                              Business
-                            </a>
+                            <Link href="/albums" class="dropdown-item">
+                              Albums
+                            </Link>
                           </li>
+
                           <li>
                             <a class="dropdown-item" href="flatter.html">
                               Flatter
@@ -583,9 +584,9 @@ export default function Home() {
                   </li>
 
                   <li class="nav-item">
-                    <a class="nav-link" href="../category/category.html">
-                      Business
-                    </a>
+                  <Link href="/albums" class="nav-link">
+                              Albums
+                            </Link>
                   </li>
 
                   <li class="nav-item mega-dropdown dropdown">
@@ -2745,9 +2746,9 @@ export default function Home() {
                     </li>
 
                     <li class="menu-item nav-item">
-                      <a href="../category/category.html" class="nav-link">
-                        Business
-                      </a>
+                    <Link href="/albums" class="nav-link">
+                              Albums
+                            </Link>
                     </li>
 
                     <li class="menu-item menu-item-has-children dropdown mega-dropdown nav-item">
@@ -4958,9 +4959,7 @@ export default function Home() {
                         <div class="col-9 col-md-8">
                           <div class="card-body pt-0">
                             <h3 class="card-title h6">
-                              <a href="../post/single1.html">
-                                Events
-                              </a>
+                              <a href="../post/single1.html">Events</a>
                             </h3>
                             {/* <div class="card-text small text-light">
                               <time datetime="2019-10-16">Oct 16, 2019</time>
@@ -4986,9 +4985,7 @@ export default function Home() {
                         <div class="col-9 col-md-8">
                           <div class="card-body pt-0">
                             <h3 class="card-title h6">
-                              <a href="../post/single1.html">
-                                Jobs
-                              </a>
+                              <a href="../post/single1.html">Jobs</a>
                             </h3>
                             {/* <div class="card-text small text-light">
                               <time datetime="2019-10-15">Oct 15, 2019</time>
@@ -5014,9 +5011,7 @@ export default function Home() {
                         <div class="col-9 col-md-8">
                           <div class="card-body pt-0">
                             <h3 class="card-title h6">
-                              <a href="../post/single1.html">
-                               Blogs
-                              </a>
+                              <a href="../post/single1.html">Blogs</a>
                             </h3>
                             {/* <div class="card-text small text-light">
                               <time datetime="2019-10-14">Oct 14, 2019</time>
