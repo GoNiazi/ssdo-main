@@ -4720,10 +4720,7 @@ export default function Home() {
                     <p>
                       Sustainable Social Development Organization (SSDO) is a
                       non-governmental organization founded in 2015 and
-                      registered under Societies Registration Act 1860. SSDO is
-                      a research-based advocacy organization working on issues
-                      of peace and sustainable development in Pakistan by
-                      engaging all stakeholders and citizens.kj
+                      registered under Societies Registration Act 1860.
                     </p>
                     <address>
                       <svg

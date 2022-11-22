@@ -2,7 +2,7 @@ import React from "react";
 
 const albums = () => {
   return (
-    <div className="wrapper">
+    <div>
       {/* header */}
       <header class="header">
         <div class="top-menu bg-white">
@@ -2815,316 +2815,463 @@ const albums = () => {
           </div>
         </nav>
       </div>
-      <div style={{ display: "flex", flexWrap: " wrap" }}>
-        <div class="col-md-6 p-3">
-          <div class="block-area">
-            <article
-              class="card card-full mb-5 mb-md-6 hover-a text-center"
-              style={{ width: "700px", height: "700px" }}
-            >
-              <div class="ratio_single image-wrapper">
+      <div class="block-title-6 mx-3 mt-5">
+                    <h4 class="h5 border-primary">
+                      <span class="bg-primary text-white">SSDO Albums</span>
+                    </h4>
+                  </div>
+      <div style={{ display: "flex", flexWrap: " wrap",  height: "100%" }}>
+        
+        <div class="col-md-4 p-3" style={{ marginBottom: "50px"}}>
+          <article style={{ width: "450px", height: "200px" }}>
+            <div className="mb-2">
+              <img
+                width="100%"
+                height="100%"
+                src="https://static.wixstatic.com/media/5668b5_90e28847fc4244de83c472e781937457~mv2.jpg/v1/fill/w_500,h_317,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01/5668b5_90e28847fc4244de83c472e781937457~mv2.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1cm46YXBwOjZiZTRmNGFmMjAzOTQwOTVhZDY5Y2NjMzk4ODkyYzhkIiwib2JqIjpbW3sicGF0aCI6Ii9tZWRpYS81NjY4YjVfOTBlMjg4NDdmYzQyNDRkZTgzYzQ3MmU3ODE5Mzc0NTd-bXYyLmpwZyJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl0sImlzcyI6InVybjphcHA6NmJlNGY0YWYyMDM5NDA5NWFkNjljY2MzOTg4OTJjOGQiLCJpYXQiOjEwMDAsImp0aSI6IjE2NzI1MzEyMDAiLCJleHAiOjE2NzI1MzEyMDAsIndtayI6eyJwYXRoIjoiL21lZGlhLzhiYjQzOF8zOWE3OGI0NmQ0ZmU0NzA2OWRhNjNkYTkzNDhiNGVlNX5tdjIucG5nIiwib3BhY2l0eSI6MSwicHJvcG9ydGlvbnMiOjAuMSwiZ3Jhdml0eSI6Im5vcnRoLXdlc3QifX0.meR8si-DYHpef8CL5zrqQ0zc36ib_s8K4ms4AF0y3es"
+                alt=""
+              />
+            </div>
+            <div style={{display :"flex", flexDirection: "column"}} class=" p-4 rounded border-bottom shadow-lrb-lg">
+              <h4 class="card-title h2 h1-md display-4-lg mb-1">
                 <a href="https://demo.bootstrap.news/lifestyle/2019/09/11/what-went-down-at-last-nights-grand-opening-of-the-new-store/">
-                  <img
-                      width="100%"
-                      height="100%"
-                    src="https://static.wixstatic.com/media/5668b5_84bdf32bae754f88b229be2667d6f812~mv2.jpg/v1/fill/w_500,h_317,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01/5668b5_84bdf32bae754f88b229be2667d6f812~mv2.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1cm46YXBwOjZiZTRmNGFmMjAzOTQwOTVhZDY5Y2NjMzk4ODkyYzhkIiwib2JqIjpbW3sicGF0aCI6Ii9tZWRpYS81NjY4YjVfODRiZGYzMmJhZTc1NGY4OGIyMjliZTI2NjdkNmY4MTJ-bXYyLmpwZyJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl0sImlzcyI6InVybjphcHA6NmJlNGY0YWYyMDM5NDA5NWFkNjljY2MzOTg4OTJjOGQiLCJpYXQiOjEwMDAsImp0aSI6IjE2NzI1MzEyMDAiLCJleHAiOjE2NzI1MzEyMDAsIndtayI6eyJwYXRoIjoiL21lZGlhLzhiYjQzOF8zOWE3OGI0NmQ0ZmU0NzA2OWRhNjNkYTkzNDhiNGVlNX5tdjIucG5nIiwib3BhY2l0eSI6MSwicHJvcG9ydGlvbnMiOjAuMSwiZ3Jhdml0eSI6Im5vcnRoLXdlc3QifX0.WLcAOlx2nCvs1dX88VBCUWeXKcgUNrDk5ZCdVrLlrhk"
-                    class="img-fluid  wp-post-image"
-                    alt="What Went Down at Last Night’s Grand Opening of the New Store"
-                    loading="lazy"
-                    // data-src="https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317.jpeg"
-                    // srcset="https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317.jpeg 1880w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-300x205.jpeg 300w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-750x513.jpeg 750w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-1024x700.jpeg 1024w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-180x123.jpeg 180w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-99x68.jpeg 99w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-115x80.jpeg 115w"
-                    sizes="(max-width: 1880px) 100vw, 1880px"
-                  />{" "}
+                Awareness Session on TIP at Kod Bhanbro, Sukkur
                 </a>
-              </div>
-              <div class="position-relative p-4 rounded border-bottom shadow-lrb-lg">
-                <h4 class="card-title h2 h1-md display-4-lg">
-                  <a href="https://demo.bootstrap.news/lifestyle/2019/09/11/what-went-down-at-last-nights-grand-opening-of-the-new-store/">
-                    What Went Down at Last Night’s Grand Opening of the New
-                    Store
-                  </a>
-                </h4>
-                <p class="card-text">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry’s
-                  standard dummy text ever since...
-                </p>
-                <div class="card-text text-muted small">
-                  <span class="fw-bold d-none d-sm-inline me-1">
-                    <a
-                      href="https://demo.bootstrap.news/lifestyle/author/admin/"
-                      title="Posts by ari budin"
-                      rel="author"
-                    >
-                      ari budin
-                    </a>{" "}
-                  </span>
-                  <time class="news-date" datetime="2019-09-11T06:21:18+00:00">
-                    September 11, 2019
-                  </time>
-                </div>
-              </div>
-            </article>
-          </div>
+              </h4>
+              <p class="card-text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry’s standard dummy
+                text ever since...
+              </p>
+            </div>
+          </article>
         </div>
-        <div class="col-md-6 p-3">
-          <div class="block-area">
-            <article
-              class="card card-full mb-5 mb-md-6 hover-a text-center"
-              style={{ width: "700px", height: "700px" }}
-            >
-              <div class="ratio_single image-wrapper">
+        <div class="col-md-4 p-3">
+          <article style={{ width: "450px", height: "200px" }}>
+            <div className="mb-2">
+              <img
+                width="100%"
+                height="100%"
+                src="https://static.wixstatic.com/media/5668b5_1682ff6854ad43a8823e5a344c998c56~mv2.jpg/v1/fill/w_500,h_317,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01/5668b5_1682ff6854ad43a8823e5a344c998c56~mv2.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1cm46YXBwOjZiZTRmNGFmMjAzOTQwOTVhZDY5Y2NjMzk4ODkyYzhkIiwib2JqIjpbW3sicGF0aCI6Ii9tZWRpYS81NjY4YjVfMTY4MmZmNjg1NGFkNDNhODgyM2U1YTM0NGM5OThjNTZ-bXYyLmpwZyJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl0sImlzcyI6InVybjphcHA6NmJlNGY0YWYyMDM5NDA5NWFkNjljY2MzOTg4OTJjOGQiLCJpYXQiOjEwMDAsImp0aSI6IjE2NzI1MzEyMDAiLCJleHAiOjE2NzI1MzEyMDAsIndtayI6eyJwYXRoIjoiL21lZGlhLzhiYjQzOF8zOWE3OGI0NmQ0ZmU0NzA2OWRhNjNkYTkzNDhiNGVlNX5tdjIucG5nIiwib3BhY2l0eSI6MSwicHJvcG9ydGlvbnMiOjAuMSwiZ3Jhdml0eSI6Im5vcnRoLXdlc3QifX0.MxWP0LRA5mmZVHej58DVN6e3P6WhhadJ9dXjXButfS4"
+                alt=""
+              />
+            </div>
+            <div style={{display :"flex", flexDirection: "column"}} class=" p-4 rounded border-bottom shadow-lrb-lg">
+              <h4 class="card-title h2 h1-md display-4-lg mb-1">
                 <a href="https://demo.bootstrap.news/lifestyle/2019/09/11/what-went-down-at-last-nights-grand-opening-of-the-new-store/">
-                  <img
-                      width="100%"
-                      height="100%"
-                    src="https://static.wixstatic.com/media/5668b5_84bdf32bae754f88b229be2667d6f812~mv2.jpg/v1/fill/w_500,h_317,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01/5668b5_84bdf32bae754f88b229be2667d6f812~mv2.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1cm46YXBwOjZiZTRmNGFmMjAzOTQwOTVhZDY5Y2NjMzk4ODkyYzhkIiwib2JqIjpbW3sicGF0aCI6Ii9tZWRpYS81NjY4YjVfODRiZGYzMmJhZTc1NGY4OGIyMjliZTI2NjdkNmY4MTJ-bXYyLmpwZyJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl0sImlzcyI6InVybjphcHA6NmJlNGY0YWYyMDM5NDA5NWFkNjljY2MzOTg4OTJjOGQiLCJpYXQiOjEwMDAsImp0aSI6IjE2NzI1MzEyMDAiLCJleHAiOjE2NzI1MzEyMDAsIndtayI6eyJwYXRoIjoiL21lZGlhLzhiYjQzOF8zOWE3OGI0NmQ0ZmU0NzA2OWRhNjNkYTkzNDhiNGVlNX5tdjIucG5nIiwib3BhY2l0eSI6MSwicHJvcG9ydGlvbnMiOjAuMSwiZ3Jhdml0eSI6Im5vcnRoLXdlc3QifX0.WLcAOlx2nCvs1dX88VBCUWeXKcgUNrDk5ZCdVrLlrhk"
-                    class="img-fluid  wp-post-image"
-                    alt="What Went Down at Last Night’s Grand Opening of the New Store"
-                    loading="lazy"
-                    // data-src="https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317.jpeg"
-                    // srcset="https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317.jpeg 1880w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-300x205.jpeg 300w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-750x513.jpeg 750w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-1024x700.jpeg 1024w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-180x123.jpeg 180w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-99x68.jpeg 99w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-115x80.jpeg 115w"
-                    sizes="(max-width: 1880px) 100vw, 1880px"
-                  />{" "}
+                SSDO Strategic Planning Meeting
                 </a>
-              </div>
-              <div class="position-relative p-4 rounded border-bottom shadow-lrb-lg">
-                <h4 class="card-title h2 h1-md display-4-lg">
-                  <a href="https://demo.bootstrap.news/lifestyle/2019/09/11/what-went-down-at-last-nights-grand-opening-of-the-new-store/">
-                    What Went Down at Last Night’s Grand Opening of the New
-                    Store
-                  </a>
-                </h4>
-                <p class="card-text">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry’s
-                  standard dummy text ever since...
-                </p>
-                <div class="card-text text-muted small">
-                  <span class="fw-bold d-none d-sm-inline me-1">
-                    <a
-                      href="https://demo.bootstrap.news/lifestyle/author/admin/"
-                      title="Posts by ari budin"
-                      rel="author"
-                    >
-                      ari budin
-                    </a>{" "}
-                  </span>
-                  <time class="news-date" datetime="2019-09-11T06:21:18+00:00">
-                    September 11, 2019
-                  </time>
-                </div>
-              </div>
-            </article>
-          </div>
+              </h4>
+              <p class="card-text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry’s standard dummy
+                text ever since...
+              </p>
+            </div>
+          </article>
         </div>
-        <div class="col-md-6 p-3">
-          <div class="block-area">
-            <article
-              class="card card-full mb-5 mb-md-6 hover-a text-center"
-              style={{ width: "700px", height: "700px" }}
-            >
-              <div class="ratio_single image-wrapper">
+        <div class="col-md-4 p-3">
+          <article style={{ width: "450px", height: "200px" }}>
+            <div className="mb-2">
+              <img
+                width="100%"
+                height="100%"
+                src="https://static.wixstatic.com/media/5668b5_673fbb2a33f24e0aac2e4e9a44255cf0~mv2.jpg/v1/fill/w_500,h_317,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01/5668b5_673fbb2a33f24e0aac2e4e9a44255cf0~mv2.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1cm46YXBwOjZiZTRmNGFmMjAzOTQwOTVhZDY5Y2NjMzk4ODkyYzhkIiwib2JqIjpbW3sicGF0aCI6Ii9tZWRpYS81NjY4YjVfNjczZmJiMmEzM2YyNGUwYWFjMmU0ZTlhNDQyNTVjZjB-bXYyLmpwZyJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl0sImlzcyI6InVybjphcHA6NmJlNGY0YWYyMDM5NDA5NWFkNjljY2MzOTg4OTJjOGQiLCJpYXQiOjEwMDAsImp0aSI6IjE2NzI1MzEyMDAiLCJleHAiOjE2NzI1MzEyMDAsIndtayI6eyJwYXRoIjoiL21lZGlhLzhiYjQzOF8zOWE3OGI0NmQ0ZmU0NzA2OWRhNjNkYTkzNDhiNGVlNX5tdjIucG5nIiwib3BhY2l0eSI6MSwicHJvcG9ydGlvbnMiOjAuMSwiZ3Jhdml0eSI6Im5vcnRoLXdlc3QifX0.cBknKLIKY-A2E5OzB5QxzuYhcZxmmoiyi8MOfIQyE3I"
+                alt=""
+              />
+            </div>
+            <div style={{display :"flex", flexDirection: "column"}} class=" p-4 rounded border-bottom shadow-lrb-lg">
+              <h4 class="card-title h2 h1-md display-4-lg mb-1">
                 <a href="https://demo.bootstrap.news/lifestyle/2019/09/11/what-went-down-at-last-nights-grand-opening-of-the-new-store/">
-                  <img
-                      width="100%"
-                      height="100%"
-                    src="https://static.wixstatic.com/media/5668b5_84bdf32bae754f88b229be2667d6f812~mv2.jpg/v1/fill/w_500,h_317,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01/5668b5_84bdf32bae754f88b229be2667d6f812~mv2.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1cm46YXBwOjZiZTRmNGFmMjAzOTQwOTVhZDY5Y2NjMzk4ODkyYzhkIiwib2JqIjpbW3sicGF0aCI6Ii9tZWRpYS81NjY4YjVfODRiZGYzMmJhZTc1NGY4OGIyMjliZTI2NjdkNmY4MTJ-bXYyLmpwZyJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl0sImlzcyI6InVybjphcHA6NmJlNGY0YWYyMDM5NDA5NWFkNjljY2MzOTg4OTJjOGQiLCJpYXQiOjEwMDAsImp0aSI6IjE2NzI1MzEyMDAiLCJleHAiOjE2NzI1MzEyMDAsIndtayI6eyJwYXRoIjoiL21lZGlhLzhiYjQzOF8zOWE3OGI0NmQ0ZmU0NzA2OWRhNjNkYTkzNDhiNGVlNX5tdjIucG5nIiwib3BhY2l0eSI6MSwicHJvcG9ydGlvbnMiOjAuMSwiZ3Jhdml0eSI6Im5vcnRoLXdlc3QifX0.WLcAOlx2nCvs1dX88VBCUWeXKcgUNrDk5ZCdVrLlrhk"
-                    class="img-fluid  wp-post-image"
-                    alt="What Went Down at Last Night’s Grand Opening of the New Store"
-                    loading="lazy"
-                    // data-src="https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317.jpeg"
-                    // srcset="https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317.jpeg 1880w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-300x205.jpeg 300w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-750x513.jpeg 750w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-1024x700.jpeg 1024w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-180x123.jpeg 180w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-99x68.jpeg 99w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-115x80.jpeg 115w"
-                    sizes="(max-width: 1880px) 100vw, 1880px"
-                  />{" "}
+                  What Went Down at Last Night’s Grand 
                 </a>
-              </div>
-              <div class="position-relative p-4 rounded border-bottom shadow-lrb-lg">
-                <h4 class="card-title h2 h1-md display-4-lg">
-                  <a href="https://demo.bootstrap.news/lifestyle/2019/09/11/what-went-down-at-last-nights-grand-opening-of-the-new-store/">
-                    What Went Down at Last Night’s Grand Opening of the New
-                    Store
-                  </a>
-                </h4>
-                <p class="card-text">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry’s
-                  standard dummy text ever since...
-                </p>
-                <div class="card-text text-muted small">
-                  <span class="fw-bold d-none d-sm-inline me-1">
-                    <a
-                      href="https://demo.bootstrap.news/lifestyle/author/admin/"
-                      title="Posts by ari budin"
-                      rel="author"
-                    >
-                      ari budin
-                    </a>{" "}
-                  </span>
-                  <time class="news-date" datetime="2019-09-11T06:21:18+00:00">
-                    September 11, 2019
-                  </time>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-        <div class="col-md-6 p-3">
-          <div class="block-area">
-            <article
-              class="card card-full mb-5 mb-md-6 hover-a text-center"
-              style={{ width: "700px", height: "700px" }}
-            >
-              <div class="ratio_single image-wrapper">
-                <a href="https://demo.bootstrap.news/lifestyle/2019/09/11/what-went-down-at-last-nights-grand-opening-of-the-new-store/">
-                  <img
-                      width="100%"
-                      height="100%"
-                    src="https://static.wixstatic.com/media/5668b5_84bdf32bae754f88b229be2667d6f812~mv2.jpg/v1/fill/w_500,h_317,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01/5668b5_84bdf32bae754f88b229be2667d6f812~mv2.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1cm46YXBwOjZiZTRmNGFmMjAzOTQwOTVhZDY5Y2NjMzk4ODkyYzhkIiwib2JqIjpbW3sicGF0aCI6Ii9tZWRpYS81NjY4YjVfODRiZGYzMmJhZTc1NGY4OGIyMjliZTI2NjdkNmY4MTJ-bXYyLmpwZyJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl0sImlzcyI6InVybjphcHA6NmJlNGY0YWYyMDM5NDA5NWFkNjljY2MzOTg4OTJjOGQiLCJpYXQiOjEwMDAsImp0aSI6IjE2NzI1MzEyMDAiLCJleHAiOjE2NzI1MzEyMDAsIndtayI6eyJwYXRoIjoiL21lZGlhLzhiYjQzOF8zOWE3OGI0NmQ0ZmU0NzA2OWRhNjNkYTkzNDhiNGVlNX5tdjIucG5nIiwib3BhY2l0eSI6MSwicHJvcG9ydGlvbnMiOjAuMSwiZ3Jhdml0eSI6Im5vcnRoLXdlc3QifX0.WLcAOlx2nCvs1dX88VBCUWeXKcgUNrDk5ZCdVrLlrhk"
-                    class="img-fluid  wp-post-image"
-                    alt="What Went Down at Last Night’s Grand Opening of the New Store"
-                    loading="lazy"
-                    // data-src="https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317.jpeg"
-                    // srcset="https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317.jpeg 1880w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-300x205.jpeg 300w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-750x513.jpeg 750w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-1024x700.jpeg 1024w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-180x123.jpeg 180w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-99x68.jpeg 99w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-115x80.jpeg 115w"
-                    sizes="(max-width: 1880px) 100vw, 1880px"
-                  />{" "}
-                </a>
-              </div>
-              <div class="position-relative p-4 rounded border-bottom shadow-lrb-lg">
-                <h4 class="card-title h2 h1-md display-4-lg">
-                  <a href="https://demo.bootstrap.news/lifestyle/2019/09/11/what-went-down-at-last-nights-grand-opening-of-the-new-store/">
-                    What Went Down at Last Night’s Grand Opening of the New
-                    Store
-                  </a>
-                </h4>
-                <p class="card-text">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry’s
-                  standard dummy text ever since...
-                </p>
-                <div class="card-text text-muted small">
-                  <span class="fw-bold d-none d-sm-inline me-1">
-                    <a
-                      href="https://demo.bootstrap.news/lifestyle/author/admin/"
-                      title="Posts by ari budin"
-                      rel="author"
-                    >
-                      ari budin
-                    </a>{" "}
-                  </span>
-                  <time class="news-date" datetime="2019-09-11T06:21:18+00:00">
-                    September 11, 2019
-                  </time>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-        <div class="col-md-6 p-3">
-          <div class="block-area">
-            <article
-              class="card card-full mb-5 mb-md-6 hover-a text-center"
-              style={{ width: "700px", height: "700px" }}
-            >
-              <div class="ratio_single image-wrapper">
-                <a href="https://demo.bootstrap.news/lifestyle/2019/09/11/what-went-down-at-last-nights-grand-opening-of-the-new-store/">
-                  <img
-                      width="100%"
-                      height="100%"
-                    src="https://static.wixstatic.com/media/5668b5_84bdf32bae754f88b229be2667d6f812~mv2.jpg/v1/fill/w_500,h_317,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01/5668b5_84bdf32bae754f88b229be2667d6f812~mv2.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1cm46YXBwOjZiZTRmNGFmMjAzOTQwOTVhZDY5Y2NjMzk4ODkyYzhkIiwib2JqIjpbW3sicGF0aCI6Ii9tZWRpYS81NjY4YjVfODRiZGYzMmJhZTc1NGY4OGIyMjliZTI2NjdkNmY4MTJ-bXYyLmpwZyJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl0sImlzcyI6InVybjphcHA6NmJlNGY0YWYyMDM5NDA5NWFkNjljY2MzOTg4OTJjOGQiLCJpYXQiOjEwMDAsImp0aSI6IjE2NzI1MzEyMDAiLCJleHAiOjE2NzI1MzEyMDAsIndtayI6eyJwYXRoIjoiL21lZGlhLzhiYjQzOF8zOWE3OGI0NmQ0ZmU0NzA2OWRhNjNkYTkzNDhiNGVlNX5tdjIucG5nIiwib3BhY2l0eSI6MSwicHJvcG9ydGlvbnMiOjAuMSwiZ3Jhdml0eSI6Im5vcnRoLXdlc3QifX0.WLcAOlx2nCvs1dX88VBCUWeXKcgUNrDk5ZCdVrLlrhk"
-                    class="img-fluid  wp-post-image"
-                    alt="What Went Down at Last Night’s Grand Opening of the New Store"
-                    loading="lazy"
-                    // data-src="https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317.jpeg"
-                    // srcset="https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317.jpeg 1880w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-300x205.jpeg 300w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-750x513.jpeg 750w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-1024x700.jpeg 1024w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-180x123.jpeg 180w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-99x68.jpeg 99w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-115x80.jpeg 115w"
-                    sizes="(max-width: 1880px) 100vw, 1880px"
-                  />{" "}
-                </a>
-              </div>
-              <div class="position-relative p-4 rounded border-bottom shadow-lrb-lg">
-                <h4 class="card-title h2 h1-md display-4-lg">
-                  <a href="https://demo.bootstrap.news/lifestyle/2019/09/11/what-went-down-at-last-nights-grand-opening-of-the-new-store/">
-                    What Went Down at Last Night’s Grand Opening of the New
-                    Store
-                  </a>
-                </h4>
-                <p class="card-text">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry’s
-                  standard dummy text ever since...
-                </p>
-                <div class="card-text text-muted small">
-                  <span class="fw-bold d-none d-sm-inline me-1">
-                    <a
-                      href="https://demo.bootstrap.news/lifestyle/author/admin/"
-                      title="Posts by ari budin"
-                      rel="author"
-                    >
-                      ari budin
-                    </a>{" "}
-                  </span>
-                  <time class="news-date" datetime="2019-09-11T06:21:18+00:00">
-                    September 11, 2019
-                  </time>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-        <div class="col-md-6 p-3">
-          <div class="block-area">
-            <article
-              class="card card-full mb-5 mb-md-6 hover-a text-center"
-              style={{ width: "700px", height: "700px" }}
-            >
-              <div class="ratio_single image-wrapper">
-                <a href="https://demo.bootstrap.news/lifestyle/2019/09/11/what-went-down-at-last-nights-grand-opening-of-the-new-store/">
-                  <img
-                      width="100%"
-                      height="100%"
-                    src="https://static.wixstatic.com/media/5668b5_84bdf32bae754f88b229be2667d6f812~mv2.jpg/v1/fill/w_500,h_317,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01/5668b5_84bdf32bae754f88b229be2667d6f812~mv2.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1cm46YXBwOjZiZTRmNGFmMjAzOTQwOTVhZDY5Y2NjMzk4ODkyYzhkIiwib2JqIjpbW3sicGF0aCI6Ii9tZWRpYS81NjY4YjVfODRiZGYzMmJhZTc1NGY4OGIyMjliZTI2NjdkNmY4MTJ-bXYyLmpwZyJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl0sImlzcyI6InVybjphcHA6NmJlNGY0YWYyMDM5NDA5NWFkNjljY2MzOTg4OTJjOGQiLCJpYXQiOjEwMDAsImp0aSI6IjE2NzI1MzEyMDAiLCJleHAiOjE2NzI1MzEyMDAsIndtayI6eyJwYXRoIjoiL21lZGlhLzhiYjQzOF8zOWE3OGI0NmQ0ZmU0NzA2OWRhNjNkYTkzNDhiNGVlNX5tdjIucG5nIiwib3BhY2l0eSI6MSwicHJvcG9ydGlvbnMiOjAuMSwiZ3Jhdml0eSI6Im5vcnRoLXdlc3QifX0.WLcAOlx2nCvs1dX88VBCUWeXKcgUNrDk5ZCdVrLlrhk"
-                    class="img-fluid  wp-post-image"
-                    alt="What Went Down at Last Night’s Grand Opening of the New Store"
-                    loading="lazy"
-                    // data-src="https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317.jpeg"
-                    // srcset="https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317.jpeg 1880w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-300x205.jpeg 300w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-750x513.jpeg 750w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-1024x700.jpeg 1024w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-180x123.jpeg 180w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-99x68.jpeg 99w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-115x80.jpeg 115w"
-                    sizes="(max-width: 1880px) 100vw, 1880px"
-                  />{" "}
-                </a>
-              </div>
-              <div class="position-relative p-4 rounded border-bottom shadow-lrb-lg">
-                <h4 class="card-title h2 h1-md display-4-lg">
-                  <a href="https://demo.bootstrap.news/lifestyle/2019/09/11/what-went-down-at-last-nights-grand-opening-of-the-new-store/">
-                    What Went Down at Last Night’s Grand Opening of the New
-                    Store
-                  </a>
-                </h4>
-                <p class="card-text">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry’s
-                  standard dummy text ever since...
-                </p>
-                <div class="card-text text-muted small">
-                  <span class="fw-bold d-none d-sm-inline me-1">
-                    <a
-                      href="https://demo.bootstrap.news/lifestyle/author/admin/"
-                      title="Posts by ari budin"
-                      rel="author"
-                    >
-                      ari budin
-                    </a>{" "}
-                  </span>
-                  <time class="news-date" datetime="2019-09-11T06:21:18+00:00">
-                    September 11, 2019
-                  </time>
-                </div>
-              </div>
-            </article>
-          </div>
+              </h4>
+              <p class="card-text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry’s standard dummy
+                text ever since...
+              </p>
+            </div>
+          </article>
         </div>
         
+      
+        <div class="col-md-4 p-3" style={{marginTop: "276px", marginBottom :" 100px"}}>
+          <article style={{ width: "450px", height: "200px" }}>
+            <div className="mb-2">
+              <img
+                width="100%"
+                height="100%"
+                src="https://static.wixstatic.com/media/5668b5_84bdf32bae754f88b229be2667d6f812~mv2.jpg/v1/fill/w_500,h_317,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01/5668b5_84bdf32bae754f88b229be2667d6f812~mv2.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1cm46YXBwOjZiZTRmNGFmMjAzOTQwOTVhZDY5Y2NjMzk4ODkyYzhkIiwib2JqIjpbW3sicGF0aCI6Ii9tZWRpYS81NjY4YjVfODRiZGYzMmJhZTc1NGY4OGIyMjliZTI2NjdkNmY4MTJ-bXYyLmpwZyJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl0sImlzcyI6InVybjphcHA6NmJlNGY0YWYyMDM5NDA5NWFkNjljY2MzOTg4OTJjOGQiLCJpYXQiOjEwMDAsImp0aSI6IjE2NzI1MzEyMDAiLCJleHAiOjE2NzI1MzEyMDAsIndtayI6eyJwYXRoIjoiL21lZGlhLzhiYjQzOF8zOWE3OGI0NmQ0ZmU0NzA2OWRhNjNkYTkzNDhiNGVlNX5tdjIucG5nIiwib3BhY2l0eSI6MSwicHJvcG9ydGlvbnMiOjAuMSwiZ3Jhdml0eSI6Im5vcnRoLXdlc3QifX0.WLcAOlx2nCvs1dX88VBCUWeXKcgUNrDk5ZCdVrLlrhk"
+                alt=""
+              />
+            </div>
+            <div style={{display :"flex", flexDirection: "column"}} class=" p-4 rounded border-bottom shadow-lrb-lg">
+              <h4 class="card-title h2 h1-md display-4-lg mb-1">
+                <a href="https://demo.bootstrap.news/lifestyle/2019/09/11/what-went-down-at-last-nights-grand-opening-of-the-new-store/">
+                 Meeting of District Stakeholders Working Group 
+                </a>
+              </h4>
+              <p class="card-text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry’s standard dummy
+                text ever since...
+              </p>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-4 p-3" style={{marginTop: "276px", marginBottom :" 100px"}}>
+          <article style={{ width: "450px", height: "200px" }}>
+            <div className="mb-2">
+              <img
+                width="100%"
+                height="100%"
+                src="https://static.wixstatic.com/media/5668b5_44c44befa40c4becb8315a63b863ad33~mv2.jpg/v1/fill/w_500,h_317,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01/5668b5_44c44befa40c4becb8315a63b863ad33~mv2.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1cm46YXBwOjZiZTRmNGFmMjAzOTQwOTVhZDY5Y2NjMzk4ODkyYzhkIiwib2JqIjpbW3sicGF0aCI6Ii9tZWRpYS81NjY4YjVfNDRjNDRiZWZhNDBjNGJlY2I4MzE1YTYzYjg2M2FkMzN-bXYyLmpwZyJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl0sImlzcyI6InVybjphcHA6NmJlNGY0YWYyMDM5NDA5NWFkNjljY2MzOTg4OTJjOGQiLCJpYXQiOjEwMDAsImp0aSI6IjE2NzI1MzEyMDAiLCJleHAiOjE2NzI1MzEyMDAsIndtayI6eyJwYXRoIjoiL21lZGlhLzhiYjQzOF8zOWE3OGI0NmQ0ZmU0NzA2OWRhNjNkYTkzNDhiNGVlNX5tdjIucG5nIiwib3BhY2l0eSI6MSwicHJvcG9ydGlvbnMiOjAuMSwiZ3Jhdml0eSI6Im5vcnRoLXdlc3QifX0.L-5pvphREUHTo8eiVuV2pWExvbuzQqSNDpPwUegwVus"
+                alt=""
+              />
+            </div>
+            <div style={{display :"flex", flexDirection: "column"}} class=" p-4 rounded border-bottom shadow-lrb-lg">
+              <h4 class="card-title h2 h1-md display-4-lg mb-1">
+                <a href="https://demo.bootstrap.news/lifestyle/2019/09/11/what-went-down-at-last-nights-grand-opening-of-the-new-store/">
+                Interactive Dialogue of Stakeholders on TIP - Multan
+                </a>
+              </h4>
+              <p class="card-text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry’s standard dummy
+                text ever since...
+              </p>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-4 p-3" style={{marginTop: "276px", marginBottom :" 100px"}}>
+          <article style={{ width: "450px", height: "200px" }}>
+            <div className="mb-2">
+              <img
+                width="100%"
+                height="100%"
+                src="https://static.wixstatic.com/media/5668b5_4f50b54eccf54ad6acda320e744bf855~mv2.jpg/v1/fill/w_500,h_317,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01/5668b5_4f50b54eccf54ad6acda320e744bf855~mv2.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1cm46YXBwOjZiZTRmNGFmMjAzOTQwOTVhZDY5Y2NjMzk4ODkyYzhkIiwib2JqIjpbW3sicGF0aCI6Ii9tZWRpYS81NjY4YjVfNGY1MGI1NGVjY2Y1NGFkNmFjZGEzMjBlNzQ0YmY4NTV-bXYyLmpwZyJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl0sImlzcyI6InVybjphcHA6NmJlNGY0YWYyMDM5NDA5NWFkNjljY2MzOTg4OTJjOGQiLCJpYXQiOjEwMDAsImp0aSI6IjE2NzI1MzEyMDAiLCJleHAiOjE2NzI1MzEyMDAsIndtayI6eyJwYXRoIjoiL21lZGlhLzhiYjQzOF8zOWE3OGI0NmQ0ZmU0NzA2OWRhNjNkYTkzNDhiNGVlNX5tdjIucG5nIiwib3BhY2l0eSI6MSwicHJvcG9ydGlvbnMiOjAuMSwiZ3Jhdml0eSI6Im5vcnRoLXdlc3QifX0.bFy9LgVyWr0QdNqDY21qVKgbfzf61blQnyJecHfVzb0"
+                alt=""
+              />
+            </div>
+            <div style={{display :"flex", flexDirection: "column"}} class=" p-4 rounded border-bottom shadow-lrb-lg">
+              <h4 class="card-title h2 h1-md display-4-lg mb-1">
+                <a href="https://demo.bootstrap.news/lifestyle/2019/09/11/what-went-down-at-last-nights-grand-opening-of-the-new-store/">
+                Universal Day of Access to Information 2022
+                </a>
+              </h4>
+              <p class="card-text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry’s standard dummy
+                text ever since...
+              </p>
+            </div>
+          </article>
+        </div>
+        
+        {/* <div class="col-md-4 p-3 mb-3">
+          <div class="block-area">
+            <article
+              class="card card-full mb-5 mb-md-6 hover-a text-center"
+              style={{ width: "450px", height: "200px" }}
+            >
+              <div class="ratio_single image-wrapper">
+                <a href="https://demo.bootstrap.news/lifestyle/2019/09/11/what-went-down-at-last-nights-grand-opening-of-the-new-store/">
+                  <img
+                    width="100%"
+                    height="100%"
+                    src="https://static.wixstatic.com/media/5668b5_84bdf32bae754f88b229be2667d6f812~mv2.jpg/v1/fill/w_500,h_317,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01/5668b5_84bdf32bae754f88b229be2667d6f812~mv2.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1cm46YXBwOjZiZTRmNGFmMjAzOTQwOTVhZDY5Y2NjMzk4ODkyYzhkIiwib2JqIjpbW3sicGF0aCI6Ii9tZWRpYS81NjY4YjVfODRiZGYzMmJhZTc1NGY4OGIyMjliZTI2NjdkNmY4MTJ-bXYyLmpwZyJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl0sImlzcyI6InVybjphcHA6NmJlNGY0YWYyMDM5NDA5NWFkNjljY2MzOTg4OTJjOGQiLCJpYXQiOjEwMDAsImp0aSI6IjE2NzI1MzEyMDAiLCJleHAiOjE2NzI1MzEyMDAsIndtayI6eyJwYXRoIjoiL21lZGlhLzhiYjQzOF8zOWE3OGI0NmQ0ZmU0NzA2OWRhNjNkYTkzNDhiNGVlNX5tdjIucG5nIiwib3BhY2l0eSI6MSwicHJvcG9ydGlvbnMiOjAuMSwiZ3Jhdml0eSI6Im5vcnRoLXdlc3QifX0.WLcAOlx2nCvs1dX88VBCUWeXKcgUNrDk5ZCdVrLlrhk"
+                    class="img-fluid  wp-post-image"
+                    alt="What Went Down at Last Night’s Grand Opening of the New Store"
+                    loading="lazy"
+                    // data-src="https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317.jpeg"
+                    // srcset="https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317.jpeg 1880w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-300x205.jpeg 300w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-750x513.jpeg 750w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-1024x700.jpeg 1024w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-180x123.jpeg 180w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-99x68.jpeg 99w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-115x80.jpeg 115w"
+                    sizes="(max-width: 1880px) 100vw, 1880px"
+                  />{" "}
+                </a>
+              </div>
+              <div class="position-relative p-4 rounded border-bottom shadow-lrb-lg">
+                <h4 class="card-title h2 h1-md display-4-lg">
+                  <a href="https://demo.bootstrap.news/lifestyle/2019/09/11/what-went-down-at-last-nights-grand-opening-of-the-new-store/">
+                  South Punjab Conference on Peace and Sustainable Development
+                  </a>
+                </h4>
+                <p class="card-text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry’s
+                  standard dummy text ever since...
+                </p>
+                <div class="card-text text-muted small">
+                  <span class="fw-bold d-none d-sm-inline me-1">
+                    <a
+                      href="https://demo.bootstrap.news/lifestyle/author/admin/"
+                      title="Posts by ari budin"
+                      rel="author"
+                    >
+                      ari budin
+                    </a>{" "}
+                  </span>
+                  <time class="news-date" datetime="2019-09-11T06:21:18+00:00">
+                    September 11, 2019
+                  </time>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div> */}
+        {/* <div class="col-md-4 p-3">
+          <div class="block-area">
+            <article
+              class="card card-full mb-5 mb-md-6 hover-a text-center"
+              style={{ width: "450px", height: "200px" }}
+            >
+              <div class="ratio_single image-wrapper">
+                <a href="https://demo.bootstrap.news/lifestyle/2019/09/11/what-went-down-at-last-nights-grand-opening-of-the-new-store/">
+                  <img
+                    width="100%"
+                    height="100%"
+                    src="https://static.wixstatic.com/media/5668b5_fff1a1fc8b494f7cb3bb3da272035125~mv2.jpg/v1/fill/w_500,h_317,al_c,q_80,usm_0.66_1.00_0.01/5668b5_fff1a1fc8b494f7cb3bb3da272035125~mv2.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1cm46YXBwOjZiZTRmNGFmMjAzOTQwOTVhZDY5Y2NjMzk4ODkyYzhkIiwib2JqIjpbW3sicGF0aCI6Ii9tZWRpYS81NjY4YjVfZmZmMWExZmM4YjQ5NGY3Y2IzYmIzZGEyNzIwMzUxMjV-bXYyLmpwZyJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl0sImlzcyI6InVybjphcHA6NmJlNGY0YWYyMDM5NDA5NWFkNjljY2MzOTg4OTJjOGQiLCJpYXQiOjEwMDAsImp0aSI6IjE2NzI1MzEyMDAiLCJleHAiOjE2NzI1MzEyMDAsIndtayI6eyJwYXRoIjoiL21lZGlhLzhiYjQzOF8zOWE3OGI0NmQ0ZmU0NzA2OWRhNjNkYTkzNDhiNGVlNX5tdjIucG5nIiwib3BhY2l0eSI6MSwicHJvcG9ydGlvbnMiOjAuMSwiZ3Jhdml0eSI6Im5vcnRoLXdlc3QifX0.nws6PhCSw_7WxP20A00NGlBjRImaOYH6QJsPDvbN7c8"
+                    class="img-fluid  wp-post-image"
+                    alt="What Went Down at Last Night’s Grand Opening of the New Store"
+                    loading="lazy"
+                    // data-src="https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317.jpeg"
+                    // srcset="https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317.jpeg 1880w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-300x205.jpeg 300w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-750x513.jpeg 750w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-1024x700.jpeg 1024w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-180x123.jpeg 180w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-99x68.jpeg 99w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-115x80.jpeg 115w"
+                    sizes="(max-width: 1880px) 100vw, 1880px"
+                  />{" "}
+                </a>
+              </div>
+              <div class="position-relative p-4 rounded border-bottom shadow-lrb-lg">
+                <h4 class="card-title h2 h1-md display-4-lg">
+                  <a href="https://demo.bootstrap.news/lifestyle/2019/09/11/what-went-down-at-last-nights-grand-opening-of-the-new-store/">
+                  Seminar on Combatting Human Trafficking at University of KHI
+                  </a>
+                </h4>
+                <p class="card-text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry’s
+                  standard dummy text ever since...
+                </p>
+                <div class="card-text text-muted small">
+                  <span class="fw-bold d-none d-sm-inline me-1">
+                    <a
+                      href="https://demo.bootstrap.news/lifestyle/author/admin/"
+                      title="Posts by ari budin"
+                      rel="author"
+                    >
+                      ari budin
+                    </a>{" "}
+                  </span>
+                  <time class="news-date" datetime="2019-09-11T06:21:18+00:00">
+                    September 11, 2019
+                  </time>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="col-md-4 p-3">
+          <div class="block-area">
+            <article
+              class="card card-full  hover-a text-center"
+              style={{ width: "450px", height: "200px" }}
+            >
+              <div class="ratio_single image-wrapper">
+                <a href="https://demo.bootstrap.news/lifestyle/2019/09/11/what-went-down-at-last-nights-grand-opening-of-the-new-store/">
+                  <img
+                    width="100%"
+                    height="100%"
+                    src="https://static.wixstatic.com/media/5668b5_36cb12b726ee4638b8df9c45ded502dc~mv2.jpg/v1/fill/w_500,h_317,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01/5668b5_36cb12b726ee4638b8df9c45ded502dc~mv2.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1cm46YXBwOjZiZTRmNGFmMjAzOTQwOTVhZDY5Y2NjMzk4ODkyYzhkIiwib2JqIjpbW3sicGF0aCI6Ii9tZWRpYS81NjY4YjVfMzZjYjEyYjcyNmVlNDYzOGI4ZGY5YzQ1ZGVkNTAyZGN-bXYyLmpwZyJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl0sImlzcyI6InVybjphcHA6NmJlNGY0YWYyMDM5NDA5NWFkNjljY2MzOTg4OTJjOGQiLCJpYXQiOjEwMDAsImp0aSI6IjE2NzI1MzEyMDAiLCJleHAiOjE2NzI1MzEyMDAsIndtayI6eyJwYXRoIjoiL21lZGlhLzhiYjQzOF8zOWE3OGI0NmQ0ZmU0NzA2OWRhNjNkYTkzNDhiNGVlNX5tdjIucG5nIiwib3BhY2l0eSI6MSwicHJvcG9ydGlvbnMiOjAuMSwiZ3Jhdml0eSI6Im5vcnRoLXdlc3QifX0.qV9GW4Y4a7Q6rlfAHN-5j50aKgum8Xcoy19z8Hdr9TY"
+                    class="img-fluid  wp-post-image"
+                    alt="What Went Down at Last Night’s Grand Opening of the New Store"
+                    loading="lazy"
+                    // data-src="https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317.jpeg"
+                    // srcset="https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317.jpeg 1880w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-300x205.jpeg 300w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-750x513.jpeg 750w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-1024x700.jpeg 1024w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-180x123.jpeg 180w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-99x68.jpeg 99w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-115x80.jpeg 115w"
+                    sizes="(max-width: 1880px) 100vw, 1880px"
+                  />{" "}
+                </a>
+              </div>
+              <div class="position-relative p-4 rounded border-bottom shadow-lrb-lg">
+                <h4 class="card-title h2 h1-md display-4-lg">
+                  <a href="https://demo.bootstrap.news/lifestyle/2019/09/11/what-went-down-at-last-nights-grand-opening-of-the-new-store/">
+                  Awareness Session on Combating TIP - IBA, Sukkur
+                  </a>
+                </h4>
+                <p class="card-text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry’s
+                  standard dummy text ever since...
+                </p>
+                <div class="card-text text-muted small">
+                  <span class="fw-bold d-none d-sm-inline me-1">
+                    <a
+                      href="https://demo.bootstrap.news/lifestyle/author/admin/"
+                      title="Posts by ari budin"
+                      rel="author"
+                    >
+                      ari budin
+                    </a>{" "}
+                  </span>
+                  <time class="news-date" datetime="2019-09-11T06:21:18+00:00">
+                    September 11, 2019
+                  </time>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="col-md-4 p-3">
+          <div class="block-area">
+            <article
+              class="card card-full  hover-a text-center"
+              style={{ width: "450px", height: "200px" }}
+            >
+              <div class="ratio_single image-wrapper">
+                <a href="https://demo.bootstrap.news/lifestyle/2019/09/11/what-went-down-at-last-nights-grand-opening-of-the-new-store/">
+                  <img
+                    width="100%"
+                    height="100%"
+                    src="https://static.wixstatic.com/media/5668b5_5805df6f81144fa7aac2768f15a11e54~mv2.jpg/v1/fill/w_500,h_317,al_c,q_80,usm_0.66_1.00_0.01/5668b5_5805df6f81144fa7aac2768f15a11e54~mv2.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1cm46YXBwOjZiZTRmNGFmMjAzOTQwOTVhZDY5Y2NjMzk4ODkyYzhkIiwib2JqIjpbW3sicGF0aCI6Ii9tZWRpYS81NjY4YjVfNTgwNWRmNmY4MTE0NGZhN2FhYzI3NjhmMTVhMTFlNTR-bXYyLmpwZyJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl0sImlzcyI6InVybjphcHA6NmJlNGY0YWYyMDM5NDA5NWFkNjljY2MzOTg4OTJjOGQiLCJpYXQiOjEwMDAsImp0aSI6IjE2NzI1MzEyMDAiLCJleHAiOjE2NzI1MzEyMDAsIndtayI6eyJwYXRoIjoiL21lZGlhLzhiYjQzOF8zOWE3OGI0NmQ0ZmU0NzA2OWRhNjNkYTkzNDhiNGVlNX5tdjIucG5nIiwib3BhY2l0eSI6MSwicHJvcG9ydGlvbnMiOjAuMSwiZ3Jhdml0eSI6Im5vcnRoLXdlc3QifX0.xhBRikwehXoPdRRdh6CILpA7V6cJoobUAyq38YfOTz0"
+                    class="img-fluid  wp-post-image"
+                    alt="What Went Down at Last Night’s Grand Opening of the New Store"
+                    loading="lazy"
+                    // data-src="https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317.jpeg"
+                    // srcset="https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317.jpeg 1880w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-300x205.jpeg 300w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-750x513.jpeg 750w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-1024x700.jpeg 1024w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-180x123.jpeg 180w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-99x68.jpeg 99w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-115x80.jpeg 115w"
+                    sizes="(max-width: 1880px) 100vw, 1880px"
+                  />{" "}
+                </a>
+              </div>
+              <div class="position-relative p-4 rounded border-bottom shadow-lrb-lg">
+                <h4 class="card-title h2 h1-md display-4-lg">
+                  <a href="https://demo.bootstrap.news/lifestyle/2019/09/11/what-went-down-at-last-nights-grand-opening-of-the-new-store/">
+                  Meeting of Punjab Parliamentary Caucus on combatting Tobacco
+                  </a>
+                </h4>
+                <p class="card-text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry’s
+                  standard dummy text ever since...
+                </p>
+                <div class="card-text text-muted small">
+                  <span class="fw-bold d-none d-sm-inline me-1">
+                    <a
+                      href="https://demo.bootstrap.news/lifestyle/author/admin/"
+                      title="Posts by ari budin"
+                      rel="author"
+                    >
+                      ari budin
+                    </a>{" "}
+                  </span>
+                  <time class="news-date" datetime="2019-09-11T06:21:18+00:00">
+                    September 11, 2019
+                  </time>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="col-md-4 p-3">
+          <div class="block-area">
+            <article
+              class="card card-full  hover-a text-center"
+              style={{ width: "450px", height: "200px" }}
+            >
+              <div class="ratio_single image-wrapper">
+                <a href="https://demo.bootstrap.news/lifestyle/2019/09/11/what-went-down-at-last-nights-grand-opening-of-the-new-store/">
+                  <img
+                    width="100%"
+                    height="100%"
+                    src="https://static.wixstatic.com/media/5668b5_44c44befa40c4becb8315a63b863ad33~mv2.jpg/v1/fill/w_500,h_317,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01/5668b5_44c44befa40c4becb8315a63b863ad33~mv2.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1cm46YXBwOjZiZTRmNGFmMjAzOTQwOTVhZDY5Y2NjMzk4ODkyYzhkIiwib2JqIjpbW3sicGF0aCI6Ii9tZWRpYS81NjY4YjVfNDRjNDRiZWZhNDBjNGJlY2I4MzE1YTYzYjg2M2FkMzN-bXYyLmpwZyJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl0sImlzcyI6InVybjphcHA6NmJlNGY0YWYyMDM5NDA5NWFkNjljY2MzOTg4OTJjOGQiLCJpYXQiOjEwMDAsImp0aSI6IjE2NzI1MzEyMDAiLCJleHAiOjE2NzI1MzEyMDAsIndtayI6eyJwYXRoIjoiL21lZGlhLzhiYjQzOF8zOWE3OGI0NmQ0ZmU0NzA2OWRhNjNkYTkzNDhiNGVlNX5tdjIucG5nIiwib3BhY2l0eSI6MSwicHJvcG9ydGlvbnMiOjAuMSwiZ3Jhdml0eSI6Im5vcnRoLXdlc3QifX0.L-5pvphREUHTo8eiVuV2pWExvbuzQqSNDpPwUegwVus"
+                    class="img-fluid  wp-post-image"
+                    alt="What Went Down at Last Night’s Grand Opening of the New Store"
+                    loading="lazy"
+                    // data-src="https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317.jpeg"
+                    // srcset="https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317.jpeg 1880w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-300x205.jpeg 300w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-750x513.jpeg 750w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-1024x700.jpeg 1024w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-180x123.jpeg 180w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-99x68.jpeg 99w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-115x80.jpeg 115w"
+                    sizes="(max-width: 1880px) 100vw, 1880px"
+                  />{" "}
+                </a>
+              </div>
+              <div class="position-relative p-4 rounded border-bottom shadow-lrb-lg">
+                <h4 class="card-title h2 h1-md display-4-lg">
+                  <a href="https://demo.bootstrap.news/lifestyle/2019/09/11/what-went-down-at-last-nights-grand-opening-of-the-new-store/">
+                  Formation of Youth Network of Citizen Journalists in Punjab
+                  </a>
+                </h4>
+                <p class="card-text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry’s
+                  standard dummy text ever since...
+                </p>
+                <div class="card-text text-muted small">
+                  <span class="fw-bold d-none d-sm-inline me-1">
+                    <a
+                      href="https://demo.bootstrap.news/lifestyle/author/admin/"
+                      title="Posts by ari budin"
+                      rel="author"
+                    >
+                      ari budin
+                    </a>{" "}
+                  </span>
+                  <time class="news-date" datetime="2019-09-11T06:21:18+00:00">
+                    September 11, 2019
+                  </time>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="col-md-4 p-3">
+          <div class="block-area">
+            <article
+              class="card card-full  hover-a text-center"
+              style={{ width: "450px", height: "200px" }}
+            >
+              <div class="ratio_single image-wrapper">
+                <a href="https://demo.bootstrap.news/lifestyle/2019/09/11/what-went-down-at-last-nights-grand-opening-of-the-new-store/">
+                  <img
+                    width="100%"
+                    height="100%"
+                    src="https://static.wixstatic.com/media/5668b5_673fbb2a33f24e0aac2e4e9a44255cf0~mv2.jpg/v1/fill/w_500,h_317,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01/5668b5_673fbb2a33f24e0aac2e4e9a44255cf0~mv2.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1cm46YXBwOjZiZTRmNGFmMjAzOTQwOTVhZDY5Y2NjMzk4ODkyYzhkIiwib2JqIjpbW3sicGF0aCI6Ii9tZWRpYS81NjY4YjVfNjczZmJiMmEzM2YyNGUwYWFjMmU0ZTlhNDQyNTVjZjB-bXYyLmpwZyJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl0sImlzcyI6InVybjphcHA6NmJlNGY0YWYyMDM5NDA5NWFkNjljY2MzOTg4OTJjOGQiLCJpYXQiOjEwMDAsImp0aSI6IjE2NzI1MzEyMDAiLCJleHAiOjE2NzI1MzEyMDAsIndtayI6eyJwYXRoIjoiL21lZGlhLzhiYjQzOF8zOWE3OGI0NmQ0ZmU0NzA2OWRhNjNkYTkzNDhiNGVlNX5tdjIucG5nIiwib3BhY2l0eSI6MSwicHJvcG9ydGlvbnMiOjAuMSwiZ3Jhdml0eSI6Im5vcnRoLXdlc3QifX0.cBknKLIKY-A2E5OzB5QxzuYhcZxmmoiyi8MOfIQyE3I"
+                    class="img-fluid  wp-post-image"
+                    alt="What Went Down at Last Night’s Grand Opening of the New Store"
+                    loading="lazy"
+                    // data-src="https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317.jpeg"
+                    // srcset="https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317.jpeg 1880w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-300x205.jpeg 300w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-750x513.jpeg 750w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-1024x700.jpeg 1024w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-180x123.jpeg 180w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-99x68.jpeg 99w, https://demo.bootstrap.news/lifestyle/wp-content/uploads/2019/09/pexels-photo-1049317-115x80.jpeg 115w"
+                    sizes="(max-width: 1880px) 100vw, 1880px"
+                  />{" "}
+                </a>
+              </div>
+              <div class="position-relative p-4 rounded border-bottom shadow-lrb-lg">
+                <h4 class="card-title h2 h1-md display-4-lg">
+                  <a href="https://demo.bootstrap.news/lifestyle/2019/09/11/what-went-down-at-last-nights-grand-opening-of-the-new-store/">
+                  Youth Network Meeting Multan
+                  </a>
+                </h4>
+                <p class="card-text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry’s
+                  standard dummy text ever since...
+                </p>
+                <div class="card-text text-muted small">
+                  <span class="fw-bold d-none d-sm-inline me-1">
+                    <a
+                      href="https://demo.bootstrap.news/lifestyle/author/admin/"
+                      title="Posts by ari budin"
+                      rel="author"
+                    >
+                      ari budin
+                    </a>{" "}
+                  </span>
+                  <time class="news-date" datetime="2019-09-11T06:21:18+00:00">
+                    September 11, 2019
+                  </time>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div> */}
         
       </div>
+ 
     </div>
   );
 };
