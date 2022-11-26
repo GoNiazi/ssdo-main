@@ -584,9 +584,9 @@ export default function Home() {
                   </li>
 
                   <li class="nav-item">
-                  <Link href="/albums" class="nav-link">
-                              Albums
-                            </Link>
+                    <Link href="/albums" class="nav-link">
+                      Albums
+                    </Link>
                   </li>
 
                   <li class="nav-item mega-dropdown dropdown">
@@ -2746,9 +2746,9 @@ export default function Home() {
                     </li>
 
                     <li class="menu-item nav-item">
-                    <Link href="/albums" class="nav-link">
-                              Albums
-                            </Link>
+                      <Link href="/albums" class="nav-link">
+                        Albums
+                      </Link>
                     </li>
 
                     <li class="menu-item menu-item-has-children dropdown mega-dropdown nav-item">
@@ -2912,9 +2912,7 @@ export default function Home() {
                       >
                         <path d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z" />
                       </svg>
-                      <span class="d-none d-md-inline-block">
-                        Breaking news
-                      </span>
+                      <span class="d-none d-md-inline-block">Up Commings</span>
                     </div>
                   </div>
 
@@ -2981,21 +2979,29 @@ export default function Home() {
                       <div class="col-12 mb-4">
                         <div class="card card-full hover-a">
                           <div class="ratio_327-278 image-wrapper">
-                            <a href="#">
+                            {/* <a href="#">
                               <img
                                 class="img-fluid "
                                 src="https://static.wixstatic.com/media/5668b5_88d48ceaff7948a19e2e43957a93fd9b~mv2.jpg/v1/crop/x_0,y_64,w_369,h_393/fill/w_319,h_340,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Tracking_Numbers_2020vs2021.jpg"
                                 data-src="../../assets/img/400x340/img1.jpg"
                                 alt="Image description"
                               />
-                            </a>
+                            </a> */}
+                            <a
+                              class="twitter-timeline"
+                              href="https://twitter.com/komaildev?ref_src=twsrc%5Etfw"
+                            >
+                              Tweets by komaildev
+                            </a>{" "}
+                            <script
+                              async
+                              src="https://platform.twitter.com/widgets.js"
+                              charset="utf-8"
+                            ></script>
                             <div class="position-absolute p-3 b-0 w-100 bg-shadow">
                               <h4 class="h3 h4-sm h3-md card-title">
                                 <a class="text-white" href="#"></a>
                               </h4>
-                              <div class="small text-light">
-                                <time datetime="2019-10-18">Oct 18, 2019</time>
-                              </div>
                             </div>
                           </div>
                         </div>
@@ -3017,9 +3023,6 @@ export default function Home() {
                               <h4 class="h3 h4-sm h3-md card-title">
                                 <a class="text-white" href="#"></a>
                               </h4>
-                              <div class="small text-light">
-                                <time datetime="2019-10-18">Oct 18, 2019</time>
-                              </div>
                             </div>
                           </div>
                         </div>
@@ -3041,9 +3044,6 @@ export default function Home() {
                               <h4 class="h3 h4-sm h3-md card-title">
                                 <a class="text-white" href="#"></a>
                               </h4>
-                              <div class="small text-light">
-                                <time datetime="2019-10-18">Oct 18, 2019</time>
-                              </div>
                             </div>
                           </div>
                         </div>
@@ -3065,9 +3065,6 @@ export default function Home() {
                               <h4 class="h3 h4-sm h3-md card-title">
                                 <a class="text-white" href="#"></a>
                               </h4>
-                              <div class="small text-light">
-                                <time datetime="2019-10-18">Oct 18, 2019</time>
-                              </div>
                             </div>
                           </div>
                         </div>
@@ -3089,15 +3086,21 @@ export default function Home() {
                               <h4 class="h3 h4-sm h3-md card-title">
                                 <a class="text-white" href="#"></a>
                               </h4>
-                              <div class="small text-light">
-                                <time datetime="2019-10-18">Oct 18, 2019</time>
-                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
                     </article>
                   </div>
+                  <p
+                    style={{
+                      textAlign: "right",
+                      color: "blue",
+                      cursor: "pointer",
+                    }}
+                  >
+                    view more
+                  </p>
                 </div>
               </div>
               {/* content start */}
@@ -3106,7 +3109,7 @@ export default function Home() {
                 <div class="block-area">
                   <div class="block-title-6">
                     <h4 class="h5 border-primary">
-                      <span class="bg-primary text-white">Events</span>
+                      <span class="bg-primary text-white">Highligths</span>
                     </h4>
                   </div>
                   <div class="border-bottom-last-0 first-pt-0">
@@ -3383,6 +3386,15 @@ export default function Home() {
                       </div>
                     </article>
                   </div>
+                  <p
+                    style={{
+                      textAlign: "right",
+                      color: "blue",
+                      cursor: "pointer",
+                    }}
+                  >
+                    view more
+                  </p>
                 </div>
 
                 {/* <div class="clearfix my-4">
