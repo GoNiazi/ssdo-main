@@ -2,6 +2,8 @@ import "../styles/theme.css";
 import "../styles/globals.css";
 import Head from "next/head";
 import Script from "next/script";
+import "@etchteam/next-pagination/dist/index.css";
+import "react-multi-carousel/lib/styles.css";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -12,22 +14,25 @@ function MyApp({ Component, pageProps }) {
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"
       />
-  
-      <Script src="/js/sticky.js" 
-       strategy="lazyOnload"
-        type="text/javascript" />
-      <Script src="/js/flickity.js"
-       strategy="lazyOnload"
-       type="text/javascript" />
-      <Script src="/js/lazyload.js" 
-       strategy="lazyOnload"
-       type="text/javascript" />
-    
-      <Script src="/js/theme.js" 
-       strategy="lazyOnload"
-       type="text/javascript" />
+
+      <Script
+        src="/js/sticky.js"
+        strategy="lazyOnload"
+        type="text/javascript"
+      />
+      <Script
+        src="/js/flickity.js"
+        strategy="lazyOnload"
+        type="text/javascript"
+      />
+      <Script
+        src="/js/lazyload.js"
+        strategy="lazyOnload"
+        type="text/javascript"
+      />
+
+      <Script src="/js/theme.js" strategy="lazyOnload" type="text/javascript" />
       <Component {...pageProps} />
-      
     </>
   );
 }

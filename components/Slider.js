@@ -5,7 +5,7 @@ import Carousel from "react-bootstrap/Carousel";
 function Slider(props) {
   return (
     <div className="row">
-      <div className="col-md-8 p-2" >
+      <div className="col-md-8 p-2">
         {/* <div
         className="col-md-7 pb-05 pt-05 pe-md-05"
         
@@ -153,13 +153,13 @@ function Slider(props) {
             </article>
           </div>
         </div> */}
-        <Carousel style={{height :"400px"}}>
+        <Carousel style={{ height: "350px" }}>
           <Carousel.Item>
             <img
               className="d-block w-100"
               src="https://static.wixstatic.com/media/5668b5_8acff813ba7a4beba43b1383ae8b5ab9~mv2.jpg/v1/fill/w_500,h_317,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01/5668b5_8acff813ba7a4beba43b1383ae8b5ab9~mv2.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1cm46YXBwOjZiZTRmNGFmMjAzOTQwOTVhZDY5Y2NjMzk4ODkyYzhkIiwib2JqIjpbW3sicGF0aCI6Ii9tZWRpYS81NjY4YjVfOGFjZmY4MTNiYTdhNGJlYmE0M2IxMzgzYWU4YjVhYjl-bXYyLmpwZyJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl0sImlzcyI6InVybjphcHA6NmJlNGY0YWYyMDM5NDA5NWFkNjljY2MzOTg4OTJjOGQiLCJpYXQiOjEwMDAsImp0aSI6IjE2NzI1MzEyMDAiLCJleHAiOjE2NzI1MzEyMDAsIndtayI6eyJwYXRoIjoiL21lZGlhLzhiYjQzOF8zOWE3OGI0NmQ0ZmU0NzA2OWRhNjNkYTkzNDhiNGVlNX5tdjIucG5nIiwib3BhY2l0eSI6MSwicHJvcG9ydGlvbnMiOjAuMSwiZ3Jhdml0eSI6Im5vcnRoLXdlc3QifX0.sKV6WLzLotopxSEIB52JVS1mCW_gxzOrPW3xchODKa4"
               alt="First slide"
-              height="400px"
+              height="350px"
             />
             {/* <Carousel.Caption>
               <h3>First slide label</h3>
@@ -171,7 +171,7 @@ function Slider(props) {
               className="d-block w-100"
               src="https://static.wixstatic.com/media/5668b5_2995db9abd2a44818a11d14300fda904~mv2.jpg/v1/fill/w_500,h_317,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01/5668b5_2995db9abd2a44818a11d14300fda904~mv2.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1cm46YXBwOjZiZTRmNGFmMjAzOTQwOTVhZDY5Y2NjMzk4ODkyYzhkIiwib2JqIjpbW3sicGF0aCI6Ii9tZWRpYS81NjY4YjVfMjk5NWRiOWFiZDJhNDQ4MThhMTFkMTQzMDBmZGE5MDR-bXYyLmpwZyJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl0sImlzcyI6InVybjphcHA6NmJlNGY0YWYyMDM5NDA5NWFkNjljY2MzOTg4OTJjOGQiLCJpYXQiOjEwMDAsImp0aSI6IjE2NzI1MzEyMDAiLCJleHAiOjE2NzI1MzEyMDAsIndtayI6eyJwYXRoIjoiL21lZGlhLzhiYjQzOF8zOWE3OGI0NmQ0ZmU0NzA2OWRhNjNkYTkzNDhiNGVlNX5tdjIucG5nIiwib3BhY2l0eSI6MSwicHJvcG9ydGlvbnMiOjAuMSwiZ3Jhdml0eSI6Im5vcnRoLXdlc3QifX0.S51z-LLdU_U1CbCuyCXpcFyE_qdd1NyJCrJgjQouFIc"
               alt="Second slide"
-              height="400px"
+              height="350px"
             />
 
             {/* <Carousel.Caption>
@@ -184,7 +184,7 @@ function Slider(props) {
               className="d-block w-100"
               src="https://static.wixstatic.com/media/5668b5_20c17785ecfb4d31943f1f0b3bf72527~mv2.jpg/v1/fill/w_500,h_317,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01/5668b5_20c17785ecfb4d31943f1f0b3bf72527~mv2.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1cm46YXBwOjZiZTRmNGFmMjAzOTQwOTVhZDY5Y2NjMzk4ODkyYzhkIiwib2JqIjpbW3sicGF0aCI6Ii9tZWRpYS81NjY4YjVfMjBjMTc3ODVlY2ZiNGQzMTk0M2YxZjBiM2JmNzI1Mjd-bXYyLmpwZyJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl0sImlzcyI6InVybjphcHA6NmJlNGY0YWYyMDM5NDA5NWFkNjljY2MzOTg4OTJjOGQiLCJpYXQiOjEwMDAsImp0aSI6IjE2NzI1MzEyMDAiLCJleHAiOjE2NzI1MzEyMDAsIndtayI6eyJwYXRoIjoiL21lZGlhLzhiYjQzOF8zOWE3OGI0NmQ0ZmU0NzA2OWRhNjNkYTkzNDhiNGVlNX5tdjIucG5nIiwib3BhY2l0eSI6MSwicHJvcG9ydGlvbnMiOjAuMSwiZ3Jhdml0eSI6Im5vcnRoLXdlc3QifX0.sYREzcOQmJKZokDk_37AseItoOrZ5PFFWwdHwvYkTq4"
               alt="Third slide"
-              height="400px"
+              height="350px"
             />
 
             {/* <Carousel.Caption>
@@ -197,15 +197,15 @@ function Slider(props) {
         </Carousel>
         {/* </div> */}
       </div>
-      <div className="col-md-4 pt-05 ps-md-05">
+      <div className="col-md-4 pt-05 ps-md-05" style={{ marginTop: "4px" }}>
         <div className="block-title-6">
           <h4 className="h5-border-primary">
-            <span className="bg-primary text-white">Press Release</span>
+            <span className="bg-primary text-white">Press Releases</span>
           </h4>
         </div>
 
         <div className="card card-full  height-ratio ">
-          <div style={{ padding: "2px" }} className="bg-light">
+          <div style={{ padding: "14px" }} className="bg-light">
             <a className="p-1 bg-primary badge  text-white" href="#"></a>
             <div style={{ marginTop: "10px" }}>
               <p style={{ paddingLeft: "10px" }}>
@@ -220,12 +220,6 @@ function Slider(props) {
               <p style={{ paddingLeft: "10px" }}>
                 28 October 2022 — Call by UNESCO, UNODC and partners to fight
                 against illicit trafficking of Afghan cultural property
-              </p>
-             
-              <p style={{ paddingLeft: "10px" }}>
-                7 November 2022 — UNODC participates in 27th UN climate change
-                conference, addressing waste trafficking and environmental
-                crime-biodiversity-climate nexus
               </p>
             </div>
           </div>
